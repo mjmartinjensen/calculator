@@ -1,20 +1,27 @@
-function add(a, b) {
-    return a + b;
+function addTwoNumbers(firstNumber, secondNumber) {
+    return firstNumber + secondNumber;
 }
 
-function subtract(a, b) {
-    return a - b;
+function subtractTwoNumbers(firstNumber, secondNumber) {
+    return firstNumber - secondNumber;
 }
 
-function multiply(a, b) {
-    return a * b;
+function multiplyTwoNumbers(firstNumber, secondNumber) {
+    return firstNumber * secondNumber;
 }
 
-function divide(a, b) {
-    return a / b;
+function divideTwoNumbers(firstNumber, secondNumber) {
+    return firstNumber / secondNumber;
 }
 
-let firstNumber;
-let operator;
-let secondNumber;
+let firstNumberChosen;
+let operatorChosen;
+let secondNumberChosen;
+
+function callOperationFunctions(operator, firstNumber, secondNumber) {
+    if(operator === "+") return add(firstNumber, secondNumber);
+    if(operator === "-") return subtract(firstNumber, secondNumber);
+    if(operator === "*") return multiply(firstNumber, secondNumber);
+    if(operator === "/") return divide(firstNumber, secondNumber);
+}
 
